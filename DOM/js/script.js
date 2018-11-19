@@ -1,0 +1,16 @@
+let quest = prompt('Какой будет фон у страницы?');
+const body = document.querySelector('body');
+body.style['background-color'] = quest;
+quest = prompt('Какой будет цвет текста на странице?');
+const text = document.querySelector('.page');
+text.style.color = quest;
+quest = prompt('Как зовут человека, который вас вдохновляет?');
+const man = document.querySelector('span.name');
+man.innerHTML = quest;
+quest = prompt('Введите адрес картинки');
+const image = document.querySelector('img');
+image.setAttribute('src', quest);
+quest = prompt('Введите текст страницы');
+const bio = document.querySelector('.shortBio');
+bio.innerHTML = quest;
+bio.className += ' animated';
